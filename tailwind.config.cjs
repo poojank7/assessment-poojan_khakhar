@@ -11,12 +11,19 @@ module.exports = {
     extend: {
       colors: {
         // add custom colors (outside of tailwind)
+        midnightgreen: "#005555",
+        outerspace: "#444444",
+        darkgreen: "#002b2b",
+        cta: "#008080",
+        white: "#ffffff",
+        gray: "#f0f5f5",
       },
       spacing: {
-        // add custom spacings (outside of tailwind)
+        spacer: "17px",
       },
       borderRadius: {
         // Use this for custom border radius
+        button: "10px",
       },
       boxShadow: {
         // Use this for custom shadows
@@ -27,14 +34,16 @@ module.exports = {
       },
       fontSize: {
         // Add custom font sizes (outside of tailwind)
+        header: "24px",
+        subheader: "20px",
       },
-      letterSpacing: theme => ({
+      letterSpacing: (theme) => ({
         ...theme("width"),
       }),
-      lineHeight: theme => ({
+      lineHeight: (theme) => ({
         ...theme("width"),
       }),
-      maxWidth: theme => ({
+      maxWidth: (theme) => ({
         ...theme("width"),
         xs: "160px",
         sm: "192px",
@@ -48,10 +57,10 @@ module.exports = {
         "6xl": "576px",
         "7xl": "640px",
       }),
-      minHeight: theme => ({
+      minHeight: (theme) => ({
         ...theme("width"),
       }),
-      minWidth: theme => ({
+      minWidth: (theme) => ({
         ...theme("width"),
       }),
     },
